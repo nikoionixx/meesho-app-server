@@ -28,7 +28,7 @@ export class AuthService {
       return await this._login(loginReq);
     } catch (e) {
       if (e instanceof HttpException) {
-        return e;
+        throw e;
       }
       this._sendUnknownException();
     }
@@ -41,7 +41,7 @@ export class AuthService {
       return await this._signup(signupReq);
     } catch (e) {
       if (e instanceof HttpException) {
-        return e;
+        throw e;
       }
       this._sendUnknownException();
     }

@@ -9,7 +9,7 @@ export const ERROR_CODE = {
   },
   ERR_NO_USER_FOUND: {
     code: 'ERR_NO_USER_FOUND',
-    message: 'User not found',
+    message: 'User not found , Please signup',
   },
   ERR_UNKNOWN: {
     code: 'ERR_UNKNOW',
